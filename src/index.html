@@ -1,0 +1,14 @@
+class {
+    constructor(){
+        this.state = {change:true}
+    }
+    doSomething(){
+        this.state.change = !this.state.change
+        console.log('state: ', this.state.change);
+    }
+}
+<div class="root">
+    <my-list list=[1,2,3,4,5,6] onClicked('doSomething')>
+        <card  ></card>
+    </my-list>
+</div>
